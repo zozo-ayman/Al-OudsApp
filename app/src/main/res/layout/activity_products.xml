@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/colorBackground"
+android:orientation="vertical"
+android:id="@+id/products_layout"
+>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="380dp"
+        android:layout_height="337dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="164dp"
+        android:text="تشهد مدينة القدس إجراءات أمنية مشددة في كل من البلدة القديمة ومحيط المسجد الأقصى. فقد دفعت سلطات الاحتلال بتعزيزات عسكرية وأمنية عند أبواب المسجد الأقصى. كما انتشرت قوات شرطة الاحتلال في مختلف أزقة مدينة القدس الشرقية ونصبت الحواجز الحديدية، وقد ارتفع عدد المصابين الفلسطينيين نتيجة المواجهات مع قوات الاحتلال الإسرائيلي إلى مئة جريح، فقد أصيب عشرة فلسطينيين على الأقل فجر اليوم إثر اعتداء شرطة الاحتلال على المصلين أثناء خروجهم من المسجد الأقصى بعد إحياء ليلة القدر قرب باب الأسباط. وأفادت جمعية الهلال الأحمر الفلسطيني بأن طواقمها نقلت أحد المصابين إلى المستشفى، بينما عولجت باقي الإصابات ميدانيا.
+
+جاء ذلك بعد ليلة أخرى شهدت مواجهات عنيفة في انحاء مدينة القدس وخارجها وأسفرت عن نحو تسعين جريحا. وفي الضفة الغربية، تركزت المواجهات قرب الجدار الفاصل في قرية /بدرس/ غربي رام الله، وقرب بلدة /بيتا/ وحاجز /حوارة/ جنوبي نابلس، وحاجزِ قلنديا العسكري شمال القدس المحتلة، وحاجزِ /الجَلَمة/ شمال شرقي جنين."
+        android:textColor="@color/colorText"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/category_back_element"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="start"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:id="@+id/txt_category_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="My Products"
+                android:textColor="@color/colorText"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/category_image"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/download"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

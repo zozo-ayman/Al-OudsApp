@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.alqudsapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
+    <application
+        android:name=".helpers.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/sanctuary"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/sanctuary"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+
+        <activity android:name=".activities.MapActivity"></activity>
+        <activity android:name=".activities.ChangeTextActivity" />
+        <activity android:name=".activities.NewsActivity" />
+        <activity android:name=".activities.AddQuestionActivity" />
+        <activity android:name=".activities.RegisterActivity" />
+        <activity android:name=".activities.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.VideoActivity" />
+        <activity android:name=".activities.UsersListActivity" />
+        <activity android:name=".activities.ChatActivity" />
+        <activity android:name=".activities.InformationActivity" />
+        <activity android:name=".activities.MainActivity" />
+        <activity android:name=".activities.PhotoActivity" />
+        <activity android:name=".activities.AddActivity" />
+        <activity android:name=".activities.PhotoDetailsActivity" />
+        <activity android:name=".activities.ShowRecycleCity" />
+        <activity android:name=".activities.UpdateActivity" />
+    </application>
+
+</manifest>
